@@ -1,11 +1,11 @@
-/*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1199px) {
-	
-
+@media only screen and (min-width : 1124px)  {
+	.content {
+    	margin: auto;
+    	width: 1124px;
+	}
 }
-
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
@@ -13,29 +13,21 @@
 	.rest2,.rest1 {
      	padding-bottom: 36px;
     }
+
 	.rest1 img , .rest img{
         height: 100%;
     	width: 100%;	
 	}
+
+	h1 {
+    padding-left: 8px;
+	}
 }
-
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 767px) {
-	
-
-	
-}
-
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	.content {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
 	
-
+	
 	h1 {
 		padding-left: 7px;
 	}
@@ -44,30 +36,16 @@
     	width: 100%;	
 	}
 	
-
 	.rest2,.rest1 {
      padding-bottom: 36px; 
-
      width: 100%;
-}
-
-@media only screen and (max-width : 374px) {
-
-}
-
-@media only screen and (min-width : 767px) and (max-width: 1023px) {
-
-}
-
-
-@media only screen and (min-width : 992px) {
-	.content {
-    	margin-left: 81px;
-    	margin-right: 82px;
-    }
  }
 
-@media only screen and (min-width : 1200px) {
+     .info a, span {
+    padding-bottom: 23px;
+}
 	
-
+	.fot {
+    padding-bottom: 17px;
+    flex-direction: column;
 }
