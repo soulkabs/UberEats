@@ -26,8 +26,6 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	
-	
 	h1 {
 		padding-left: 7px;
 	}
@@ -49,3 +47,4 @@
     padding-bottom: 17px;
     flex-direction: column;
 }
+
