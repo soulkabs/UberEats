@@ -1,0 +1,120 @@
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1124px)  {
+	.content {
+    	width: 956px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	.rest2,.rest1 {
+     	padding-bottom: 36px;
+    }
+
+	.rest1 img , .rest img{
+        height: 100%;
+    	width: 100%;	
+	}
+
+	h1 {
+    padding-left: 8px;
+	}
+
+	.member {
+    margin-bottom: 32px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	h1 {
+		padding-left: 7px;
+	}
+	.rest1 img , .rest img{
+        height: 75%;
+    	width: 100%;	
+	}
+	
+	.rest2,.rest1 {
+	     padding-bottom: 36px; 
+	     width: 100%;
+ 	}
+
+     .info a, span {
+    	padding-bottom: 23px;
+	}
+	
+	.fot {
+	    padding-bottom: 17px;
+	    flex-direction: column;
+	}
+
+	.content {
+	    padding-left: 8px;
+	}
+
+	.card1 h1 {
+    	font-size: 22px;
+	}
+
+	.members {
+    	padding-bottom: 24px;
+	}
+
+	.memberName {
+	    font-size: 13px;
+	    padding: 8px 0px 0px 0px;
+	}
+
+	.member {
+		margin-bottom: 16px;
+		border: none;
+		border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+	}
+
+	.image {
+	    width: 112px;
+	    height: 100%;
+	}
+
+	.border {
+	    text-align: center;
+	}
+
+	.card1 span {
+	    padding-top: 40px;
+	    grid-row-gap: 16px;
+	    grid-template-columns:  auto; 
+	    justify-content: center;
+	}
+
+	.card1 {
+	    border-radius: 2px;
+	    padding: 24px 49px;
+	    background: #FFFFFF;
+	}
+	.border {
+	    font-size: 12px;
+	  }
+
+	.b {
+	  	display: none;
+	}
+
+	.navbar {
+	    padding-top: 15px;
+	}
+
+	li {
+	    display: block;
+	    padding: 16px 0px 16px 0px;
+	}
+
+	.point {
+	    font-size: 22px;
+	    padding-top: 16px;
+	    padding-bottom: 43px;
+	    text-align: center;
+	}
+}
