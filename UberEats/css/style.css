@@ -2,6 +2,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	margin: auto;
 }
+/*-----------Header----------*/
 header {
 	background-color: white;
 	position: fixed;
@@ -15,20 +16,19 @@ header {
 }
 
 .navbar {
-	display: flex;
+	display: grid;
+	grid-template-columns: auto auto;
   	justify-content: space-between;
   	align-items: center;
 }
 
 .menu {
 	display: flex;
-	justify-content: flex-end;
 	align-items: center;
 }
 
 .button {
 	font-size: 13px;
-	background-color: white;
 	border-radius: 1px;
 	border: 1px solid #E0E0E0;
     font-weight: 500;
@@ -36,7 +36,7 @@ header {
     text-align: center;
     text-decoration: none;
 }
-
+/*----------Search--------------*/
 .search {
 	padding-top: 128px;
 }
@@ -51,7 +51,8 @@ header {
 	opacity: 0.5;
 }
 
-h1 {
+/*---------Restaurant---------*/
+.h1 {
 	padding-top: 56px;
 	font-style: normal;
 	font-weight: normal;
@@ -59,11 +60,9 @@ h1 {
 	line-height: 34px;
 }
 
-
 .rest {
 	display: flex;
 	flex-wrap: wrap;
-	
 }
 
 .rest1 {
@@ -104,6 +103,7 @@ h1 {
 	background-color: rgba(117,117,117,0.05)
 }
 
+/*----------Footer----------*/
 .Footer {
 	background-color: #262626;
 }
@@ -155,8 +155,6 @@ h1 {
 	border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 
-
-
 .fot {
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -168,8 +166,124 @@ h1 {
 	font-size: 11px;
 	line-height: 13px;
 }
+
 .absolute {
 	position: fixed;
 	right: 16px;
 	bottom: 10px;
+}
+
+/*----------PagePushkin--------*/
+
+/*-------------Rest----------------*/
+.Rest {
+	background-image: url("../images/pushkin.png");
+	background-size: cover;
+}
+
+.card {
+	padding-top: 152px;
+    padding-bottom: 80px;
+}
+
+.card1{
+	border-radius: 2px;
+	padding: 38px;
+	background: #FFFFFF;
+}
+
+.card1 h1{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+	font-size: 35px;
+}
+
+.card1 span {
+	font-weight: normal;
+	font-size: 14px;
+	padding-top: 54px;
+	display: grid;
+	align-self: center;
+	grid-template-columns: auto  auto;
+	justify-content: space-between;
+	color: #626262;
+}
+
+.border {
+	border-radius: 16px;
+	color: white;
+	background-color: #262626;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 15px;
+	padding: 8px 16px;
+}
+/*------------Menu1----------------*/
+ul {
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+li {
+	display: inline-block;
+	padding: 32px 40px 29px 0px;
+}
+.menu1 {
+	text-decoration: none;
+	font-size: 16px;
+	color: #626262;
+}
+
+.menu1:hover {
+	color: #327430;
+}
+/*-----------Point-----------------*/
+.point {
+	font-weight: normal;
+	font-size: 22px;
+	padding-top: 56px;
+	padding-bottom: 32px;
+}
+
+.members {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 31px;
+}
+
+.member {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid rgba(117, 117, 117, 0.2);
+	border-radius: 2px;
+	margin-bottom: 49px;
+}
+
+.member:hover {
+	background: rgba(117,117,117,0.05);
+}
+
+.memberName {
+	padding: 16px 0px 16px 16px;
+	font-weight: normal;
+	font-size: 16px;
+	display: grid;
+	align-content: space-between;
+}
+
+.member-role {
+	font-size: 13px;
+	color: #626262;
+}
+
+.memberPrice {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.image  {
+	width: 160px;
+	height: 150px;
 }
