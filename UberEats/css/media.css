@@ -31,7 +31,7 @@
 	h1 {
 		padding-left: 7px;
 	}
-	
+
 	.rest1 img , .rest img{
         height: 75%;
     	width: 100%;	
@@ -67,16 +67,16 @@
     	font-size: 22px;
 	}
 
-	.members {
+	.meals {
     	padding-bottom: 24px;
 	}
 
-	.memberName {
+	.mealName {
 	    font-size: 13px;
 	    padding: 8px 0px 0px 0px;
 	}
 
-	.member {
+	.meal {
 		margin-bottom: 16px;
 		border: none;
 		border-bottom: 1px solid rgba(117, 117, 117, 0.2);
