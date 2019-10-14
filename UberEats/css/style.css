@@ -1,6 +1,7 @@
-body {
+* {
 	font-family: 'Roboto', sans-serif;
-	margin: auto;
+	font-style: normal;
+	text-decoration: none;
 }
 /*-----------Header----------*/
 header {
@@ -9,6 +10,8 @@ header {
 	width: 100%;
 	height: 72px;
 	box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+	top: 0px;
+	left: 0px;
 }
 
 .content {
@@ -34,7 +37,6 @@ header {
     font-weight: 500;
  	padding: 14px 20px;
     text-align: center;
-    text-decoration: none;
 }
 /*----------Search--------------*/
 .search {
@@ -52,9 +54,8 @@ header {
 }
 
 /*---------Restaurant---------*/
-.h1 {
+#restInMoscow {
 	padding-top: 56px;
-	font-style: normal;
 	font-weight: normal;
 	font-size: 22px;
 	line-height: 34px;
@@ -66,29 +67,24 @@ header {
 }
 
 .rest1 {
-	padding-bottom: 16px;
+	margin-bottom: 16px;
 }
 
-.rest2 {
-	padding-bottom: 100px;
+#lastRest {
+	margin-bottom: 100px;
 }
 
 .name {
-	margin: 0px;
 	margin-top: 16px;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: bold;
-	display: flex;
-	flex-direction: column;
 }
 
 .eat {
 	font-size: 14px;
 	line-height: 21px;
 	color: #626262;
-	display: flex;
-	flex-direction: column;
 	font-weight: normal;
 }
 
@@ -114,24 +110,27 @@ header {
 	border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 
-.inf {
-	flex-basis: 30%;
-}
-
 .info {
-	padding-top: 23px;
 	display: flex;
-	flex-direction: row;
+	padding-top: 9px;
 	justify-content: space-between;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 13px;
 	line-height: 15px;
 }
 
-.info a, .fot span {	
+.infoColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-basis: 30%;
+}
+
+.infoPoint {
+	padding-top: 23px;
+}
+
+.info a, .fot  {	
 	color: white;
-	text-decoration: none;
 }
 
 .info a:hover {
@@ -142,13 +141,15 @@ header {
 	color: #49A144;
 }
 
-.n {
-	padding-bottom: 48px;
+#last {
+	margin-bottom: 48px;
 }
 
 .lable {
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: auto auto;
+  	justify-content: center;
+	grid-gap: 41px;
 	padding-top: 40px;
 	padding-bottom: 40px;
 	border-top: 1px solid rgba(255,255,255,0.4);
@@ -158,16 +159,14 @@ header {
 .fot {
 	padding-top: 40px;
 	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	font-style: normal;
+	display: grid;
+	grid-template-columns: 35% 35% 35%;
 	font-weight: normal;
 	font-size: 11px;
 	line-height: 13px;
 }
 
-.absolute {
+.buttonUp {
 	position: fixed;
 	right: 16px;
 	bottom: 10px;
@@ -231,7 +230,6 @@ li {
 	padding: 32px 40px 29px 0px;
 }
 .menu1 {
-	text-decoration: none;
 	font-size: 16px;
 	color: #626262;
 }
@@ -247,13 +245,13 @@ li {
 	padding-bottom: 32px;
 }
 
-.members {
+.meals {
 	display: flex;
 	flex-wrap: wrap;
 	padding-bottom: 31px;
 }
 
-.member {
+.meal {
 	display: flex;
 	justify-content: space-between;
 	border: 1px solid rgba(117, 117, 117, 0.2);
@@ -261,11 +259,11 @@ li {
 	margin-bottom: 49px;
 }
 
-.member:hover {
+.meal:hover {
 	background: rgba(117,117,117,0.05);
 }
 
-.memberName {
+.mealName {
 	padding: 16px 0px 16px 16px;
 	font-weight: normal;
 	font-size: 16px;
@@ -273,12 +271,12 @@ li {
 	align-content: space-between;
 }
 
-.member-role {
+.meal-role {
 	font-size: 13px;
 	color: #626262;
 }
 
-.memberPrice {
+.mealPrice {
 	font-weight: bold;
 	font-size: 15px;
 }

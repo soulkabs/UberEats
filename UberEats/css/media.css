@@ -8,9 +8,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
-	.rest2,.rest1 {
-     	padding-bottom: 36px;
-    }
+	#lastRest {
+	     margin-bottom: 68px; 
+ 	}
 
 	.rest1 img , .rest img{
         height: 100%;
@@ -31,23 +31,32 @@
 	h1 {
 		padding-left: 7px;
 	}
+	
 	.rest1 img , .rest img{
         height: 75%;
     	width: 100%;	
 	}
 	
-	.rest2,.rest1 {
-	     padding-bottom: 36px; 
-	     width: 100%;
+	#lastRest {
+	     margin-bottom: 68px; 
  	}
 
-     .info a, span {
-    	padding-bottom: 23px;
+ 	.info {
+ 		display: block;
+ 	}
+
+	.lable {
+    	grid-gap: 22px;
 	}
-	
+
 	.fot {
-	    padding-bottom: 17px;
-	    flex-direction: column;
+		display: block;
+	    padding-bottom: 40px;
+	    padding-top: 16px;	
+	}
+
+	.fot div{
+		padding-top: 24px;
 	}
 
 	.content {
